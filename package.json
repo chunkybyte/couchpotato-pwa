@@ -4,12 +4,13 @@
   "description": "A PWA demo application",
   "main": "index.js",
   "scripts": {
-    "start" : "ws",
+    "start": "ws",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Ekansh Kothiyal",
   "license": "ISC",
   "dependencies": {
+    "jquery": "^3.3.1",
     "local-web-server": "^2.5.2"
   }
 }
