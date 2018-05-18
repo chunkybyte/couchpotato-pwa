@@ -1,0 +1,11 @@
+{
+    "short_name": "CouchPotato",
+    "name": "Couch Potato",
+    "start_url": "/",
+    "background_color": "#AEC349",
+    "display": "standalone",
+    "scope": "/",
+    "theme_color": "#1A854C",
+    "orientation": "portrait",
+    "gcm_sender_id": "103953800507"
+  }
