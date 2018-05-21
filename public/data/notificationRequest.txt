@@ -7,9 +7,11 @@ Authorization : key=AAAAqkkYU5w:APA91bHcfNNCvEtTSRaD-BAIQcTDuOk-uCuUzfGG6ekr7OD8
 
 Body : 
 {
-   "to" : "e4EMF9Rwl7Y:APA91bG5EvQtLpwMcmR1OmeBR0BrY15LTTUipK9lBRNnWmGEkuuxQWQs9Pfi8dO1p6bqbGh864aKDvSZNCEC_8IUQokYrXxBErZe4jcmJFe4yhyYCq7UhQzDW5fcqcSrgitWvdNSxM2W",
+   "to" : <FCM_Token>,
    "notification" : {
     "body": "New Potato in the Couch!",
     "title": "Ding Dong Fellows!"
    }
 }
+
+Note : For FCM_Token, check console message.
