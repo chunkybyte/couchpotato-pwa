@@ -1,10 +1,11 @@
 // Service Worker File
 
-var CACHE_NAME = "couch-potato-v2";
+var CACHE_NAME = "couch-potato-v3";
 var urlsToCache = [
     '/',
-    '/scripts/app.js',
     '/css/styles.css',
+    '/scripts/app.js',
+    './scripts/jquery.min.js',
     '/data/manifest.json',
     '/scripts/firebaseOperations.js'
 ];

@@ -1,0 +1,15 @@
+POST request
+https://fcm.googleapis.com/fcm/send
+
+Headers : 
+Content-Type : application/json
+Authorization : key=AAAAqkkYU5w:APA91bHcfNNCvEtTSRaD-BAIQcTDuOk-uCuUzfGG6ekr7OD8Qvjlqwo8RfWCSNp_fgNStUnYp70uDjzcZ19F4E1qdIkhjXU_c1HYMog96cHVmxu7ff9hIhjjSWYHiXA-ufwOHlNYSeaN
+
+Body : 
+{
+   "to" : "e4EMF9Rwl7Y:APA91bG5EvQtLpwMcmR1OmeBR0BrY15LTTUipK9lBRNnWmGEkuuxQWQs9Pfi8dO1p6bqbGh864aKDvSZNCEC_8IUQokYrXxBErZe4jcmJFe4yhyYCq7UhQzDW5fcqcSrgitWvdNSxM2W",
+   "notification" : {
+    "body": "New Potato in the Couch!",
+    "title": "Ding Dong Fellows!"
+   }
+}

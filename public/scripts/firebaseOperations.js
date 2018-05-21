@@ -11,33 +11,18 @@ var FirebaseOperations = (function() {
             messaging.requestPermission()
                 .then(function() {
                     console.log("Notification Permission Granted!");
-
-                }).catch(function(err) {
+                    return messaging.getToken();
+                })
+                .then(function(currentToken) {
+                    console.log("Current FCM Device Token : ", currentToken);
+                })
+                .catch(function(err) {
                     console.log("Unable to show notifications : ", err);
             });
 
-            console.log("Step 2 : Permission Check Complete. Token Things Now.");            
-            
-            messaging.getToken().then(function(currentToken) {
-                if (currentToken) {
-                    
-                    console.log("Current Token : ", currentToken);
-
-                    sendTokenToServer(currentToken);
-                    updateUIForPushEnabled(currentToken);
-                } else {
-                    console.log("Need Permission to show Notifications");
-                    updateUIForPushPermissionRequired();
-                    setTokenSentToServer(false);
-                }
-            }).catch(function(err) {
-                console.log("Unable to Retrieve the Token : ", err);
-                showToken("Error retrieving Instance ID token : ", err);
-                setTokenSentToServer(false);
-            }).then(function() {
-                console.log("Step 3 : Token Thing Done!");
+            messaging.onMessage(function(payload) {
+                console.log('Payload Message', payload);
             });
-
         },
 
         init: function() {
